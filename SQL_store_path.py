@@ -46,8 +46,8 @@ def UPDATE(conn,DB_NAME,Param_NAME,PARAM):
 
 conn =pyodbc.connect(
     'Driver={SQL Server Native Client 11.0};'
-    'Server=DESKTOP-TO7M4FP;'
-    'Database=tt;'
+    'Server=*******;'
+    'Database=******;'
     'Trusted_Connection=yes;')
 
 USP(conn,'[dbo].[insert_image_path]',['@imageP', '@imageName'],["'D:/SOFTWARES/PYCHARM/PycharmProjects/SeeFood/archive/chest_xray/train/PNEUMONIA'", "'Pneumonea_Train';"])
